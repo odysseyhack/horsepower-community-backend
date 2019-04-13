@@ -1,0 +1,11 @@
+{
+    "body": "{\"content\":\"updated description\"}",
+    "pathParameters": {
+      "id": "e13e9520-5df0-11e9-b2ec-eb9092f02572"
+    },
+    "requestContext": {
+      "identity": {
+        "cognitoIdentityId": "USER-SUB-1234"
+      }
+    }
+  }
