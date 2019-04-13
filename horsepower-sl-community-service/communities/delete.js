@@ -4,10 +4,8 @@ import { success, failure } from "../libs/response-lib";
 export async function main(event, context) {
   const params = {
     TableName: "communities",
-    // 'Key' defines the partition key and sort key of the item to be removed
-    // - 'userId': Identity Pool identity id of the authenticated user
-    // - 'noteId': path parameter
     Key: {
+      // userId and communityId as parameters
       userId: event.requestContext.identity.cognitoIdentityId,
       communityId: event.pathParameters.id
     }
